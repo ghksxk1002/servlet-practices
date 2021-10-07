@@ -38,9 +38,24 @@
 		</tr>
 	</table>
 	<br />
-	<img src='/helloweb/assets/images/둘리.png' style="width: 150px; border:1px solid #999"/>
+	<img src='/helloweb/assets/images/둘리.png'
+		style="width: 150px; border: 1px solid #999" />
 	<br />
-	<img src='assets/images/둘리.png' style="width: 150px; border:1px solid #999"/>
+	<img src='assets/images/둘리.png'
+		style="width: 150px; border: 1px solid #999" />
+
+	<br />
+	<a href="form.jsp">폼으로 가기</a>
+	<br />
+	<a href="/helloweb/hello.jsp?name=이승현&email=ghksxk1002@naver.com">hello</a>
+
+	<p>
+		우에에에엥에에에<br /> 
+		에에에에에엥에<br />
+	</p>
+
+
+
 
 </body>
 </html>
