@@ -10,5 +10,5 @@ order by reg_date desc;
 -- delete
 delete 
   from guestbook
- where no=5
+ where no=9
    and password='1234';
