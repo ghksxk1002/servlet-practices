@@ -14,5 +14,5 @@
 	
 	new GuestBookDao().delete(no1, password);
 
-	response.sendRedirect("/guestbook01");
+	response.sendRedirect("/guestbook02");
 %>
