@@ -8,12 +8,12 @@
 <title>방명록</title>
 </head>
 <body>
-	<form method="post" action="delete.jsp">
+	<form method="post" action="/guestbook02/gb?a=delete">
 		<input type='hidden' name="no" value="<%=no %>">
 		<input type="password" name="password">
 		<input type="submit" value="확인">
 	</form>
 	<br />
-	<a href="index.jsp">메인으로 돌아가기</a>
+	<a href="/guestbook02/gb?a=index">메인으로 돌아가기</a>
 </body>
 </html>

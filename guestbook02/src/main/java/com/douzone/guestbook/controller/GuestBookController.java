@@ -1,4 +1,4 @@
-package com.douzone.guestbookcontroller;
+package com.douzone.guestbook.controller;
 
 import java.io.IOException;
 import java.util.List;
@@ -21,13 +21,14 @@ public class GuestBookController extends HttpServlet {
 		request.setCharacterEncoding("UTF-8");
 
 		String action = request.getParameter("a");
-
+		System.out.println("귀찮아너무1");
 		if ("deleteform".equals(action)) {
-			RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/delete.jsp");
+			
+			RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/deleteform.jsp");
 			rd.forward(request, response);
+			
 		} else if ("add".equals(action)) {
-			request.setCharacterEncoding("UTF-8");
-
+			
 			String name = request.getParameter("name");
 			String password = request.getParameter("password");
 			String text = request.getParameter("message");
@@ -39,8 +40,9 @@ public class GuestBookController extends HttpServlet {
 			
 			new GuestBookDao().insert(vo);
 
-			response.sendRedirect("/guestbook02");
+			response.sendRedirect("/guestbook02/gb");
 		} else if("delete".equals(action)){
+			
 			request.setCharacterEncoding("UTF-8");
 
 			String no =request.getParameter("no");
@@ -53,8 +55,10 @@ public class GuestBookController extends HttpServlet {
 			
 			new GuestBookDao().delete(no1, password);
 
-			response.sendRedirect("/guestbook02");
+			response.sendRedirect("/guestbook02/gb");
+			
 		} else {
+			
 			GuestBookDao dao = new GuestBookDao();
 			List<GuestBookVo> list = dao.findAll();
 
