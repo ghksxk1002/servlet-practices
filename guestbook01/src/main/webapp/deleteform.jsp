@@ -6,15 +6,10 @@
 </head>
 <body>
 	<form method="post" action="delete.jsp">
-		<input type='hidden' name="id" value="">
-		<table>
-			<tr>
-				<td>비밀번호</td>
-				<td><input type="password" name="password"></td>
-				<td><input type="submit" value="확인"></td>
-				<td><a href="index.jsp">메인으로 돌아가기</a></td>
-			</tr>
-		</table>
+		<input type='hidden' name="no" value="">
+		<input type="password" name="password">
+		<input type="submit" value="확인">
 	</form>
+	<td><a href="index.jsp">메인으로 돌아가기</a></td>
 </body>
 </html>
