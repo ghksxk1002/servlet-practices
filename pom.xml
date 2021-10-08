@@ -11,7 +11,6 @@
 		<module>emaillist01</module>
 		<module>guestbook01</module>
 		<module>emaillist02</module>
-		<module>guestbook02</module>
 	</modules>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
