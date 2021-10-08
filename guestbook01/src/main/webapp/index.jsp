@@ -1,5 +1,6 @@
 <%@page import="com.douzone.guestbook.dao.GuestBookDao"%>
 <%@page import="com.douzone.guestbook.vo.GuestBookVo"%>
+<%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%
 	GuestBookDao dao = new GuestBookDao();
@@ -26,15 +27,17 @@
 	</table>
 	</form>
 	<br>
-	<%
+	<%	
+		int i = 0;
 		for(GuestBookVo vo : list){
+			i++;
 	%>
 	<table width=510 border=1>
 		<tr>
-			<td>[1]</td>
-			<td><%=vo.getName() %>/td>
+			<td><%=i %></td>
+			<td><%=vo.getName() %></td>
 			<td><%=vo.getRegDate() %></td>
-			<td><a href="deleteform.jsp?no=10">삭제</a></td>
+			<td><a href="deleteform.jsp?no=<%=vo.getNo() %>">삭제</a></td>
 		</tr>
 		<tr>
 			<td colspan=4><%=vo.getText() %></td>
