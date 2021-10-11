@@ -21,7 +21,6 @@ public class GuestBookController extends HttpServlet {
 		request.setCharacterEncoding("UTF-8");
 
 		String action = request.getParameter("a");
-		System.out.println("귀찮아너무1");
 		if ("deleteform".equals(action)) {
 			
 			RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/deleteform.jsp");
