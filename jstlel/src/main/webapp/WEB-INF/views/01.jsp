@@ -8,7 +8,7 @@
 </head>
 <body>
 	<h4>값출력</h4>
-	${iVal } <br/>
+	${requestScope.iVal } <br/>
 	${lVal } <br/>
 	${fVal } <br/>
 	${bVal } <br/>
@@ -30,7 +30,7 @@
 	${not empty obj } <br />
 	
 	<h4>논리연산</h4>
-	${iVal ==10 && lVal < 1000 } <br />
+	${iVal == 10 && lVal < 1000 } <br />
 	${iVal == 10 || lVal < 1000 } <br />
 	
 	<h4>요청파라미처</h4>
